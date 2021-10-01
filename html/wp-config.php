@@ -108,6 +108,7 @@ $table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', !!getenv_docker('WORDPRESS_DEBUG', '') );
+define('WP_DEBUG_LOG', !!getenv_docker('WORDPRESS_DEBUG_LOG', '') );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -131,3 +132,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+print "hellow??????????????";
+//print_r("does this atleast work????????????????", true);
+echo "echooooooooooo?";
+
+//print_r(getenv_docker());
